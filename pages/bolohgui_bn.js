@@ -125,42 +125,42 @@ export default function Lab2() {
   return (
     <div className="grid grid-cols-4 gap-4">
       {(clothes || [])?.map((item) => (
-        <div className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
+        <div key={item.id} className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
           <img src={item?.images[0]} className="w-60 h-40"/>
           <h2 className="text-xl font-semibold text-gray-700">{item.name}</h2>
           <p className="text-gray-600 mt-2">{item.description}</p>
         </div>
       ))}
       {(instruments || [])?.map((item) => (
-        <div className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
+        <div key={item.id} className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
           <img src={item?.images[0]} className="w-60 h-40"/>
           <h2 className="text-xl font-semibold text-gray-700">{item.name}</h2>
           <p className="text-gray-600 mt-2">{item.description}</p>
         </div>
       ))}
       {(HistoricalTools || [])?.map((item) => (
-        <div className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
+        <div key={item.id} className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
           <img src={item?.images[0]} className="w-60 h-40"/>
           <h2 className="text-xl font-semibold text-gray-700">{item.name}</h2>
           <p className="text-gray-600 mt-2">{item.description}</p>
         </div>
       ))}
       {(EthnicGroups || [])?.map((item) => (
-        <div className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
+        <div key={item.id} className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
           <img src={item?.images[0]} className="w-60 h-40"/>
           <h2 className="text-xl font-semibold text-gray-700">{item.name}</h2>
           <p className="text-gray-600 mt-2">{item.description}</p>
         </div>
       ))}
       {(HistoricalFigures || [])?.map((item) => (
-        <div className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
+        <div key={item.id} className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
           <img src={item?.images[0]} className="w-60 h-40"/>
           <h2 className="text-xl font-semibold text-gray-700">{item.name}</h2>
           <p className="text-gray-600 mt-2">{item.description}</p>
         </div>
       ))}
       {(TouristAttractions || [])?.map((item) => (
-        <div className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
+        <div key={item.id} className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center">
           <img src={item?.images[0]} className="w-60 h-40"/>
           <h2 className="text-xl font-semibold text-gray-700">{item.name}</h2>
           <p className="text-gray-600 mt-2">{item.description}</p>
