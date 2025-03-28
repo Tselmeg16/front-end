@@ -6,8 +6,6 @@ export default function ID() {
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState();
 
-    console.log(router.query.id);
-
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -29,7 +27,6 @@ export default function ID() {
 
         fetchData();
     }, []);
-    console.log(data);
 
     return(
     <div>

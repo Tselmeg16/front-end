@@ -56,7 +56,7 @@ export default function News() {
           grid ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "space-y-4"
         } gap-4`}
       >
-        {filteredData.map((player) => (
+        {(filteredData || []).map((player) => (
           <div
             key={player.id}
             className="border-2 border-purple-400 rounded-lg p-4 bg-white hover:shadow-lg transition-all"

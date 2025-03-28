@@ -98,7 +98,7 @@ export default function Lab2() {
               : "space-y-4"
           }
         >
-          {filteredData.map((item) => (
+          {(filteredData || []).map((item) => (
             <div
               key={item.name}
               className="border bg-white shadow-lg rounded-lg p-4 flex flex-col items-center text-center"
